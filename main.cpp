@@ -1,7 +1,10 @@
-#include "bash.cpp"
+#include "mainwindow.h"
+#include <QApplication>
 
-int main() {
-    Bash bash;
-    bash.execute();
+int main(int argc, char *argv[]) {
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.setFixedSize(460, 715);
+    w.show();
+    return a.exec();
 }
-
